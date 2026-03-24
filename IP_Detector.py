@@ -67,8 +67,8 @@ class Load_to_Yandex_Disc:
        else:
            print("Не удалось получить ссылку для загрузки:", response.status_code)
 
-if __name__ == "__main__":
-    Token = "введите токен"
+def main():
+    Token = "y0__xCb9cGxAhjblgMgm6Cf4hYw85-goQjKbP9HPIpGDN2jMwXU9WPt2EP21A"
 
     # Создание экземпляров классов для определения ip пользователя
     ip_finder = IP_Definer()
@@ -86,22 +86,5 @@ if __name__ == "__main__":
             file_name = "location_from_ip.json"
             yandex_disc.create_folder(folder_name)
             yandex_disc.load_to_yadisc(folder_name, file_name, location_data)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if __name__ == "__main__":
+    main()
